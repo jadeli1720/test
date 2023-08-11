@@ -1,0 +1,142 @@
+/**************BROWSER RESETS**************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background: #003450;
+  background: radial-gradient(circle, #003450 40%, #001832 100%);
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/**************CALCULATOR**************/
+#calculator {
+  background-color: rgba(240, 255, 255, 0.765);
+  border-radius: 0.313rem;
+  box-shadow: 0px 6px 12px 4px rgba(9, 9, 9, 0.75);
+  padding: 24px;
+}
+
+
+/*********DISPLAY SCREEN*********/
+.displayScreen,
+.btn {
+  font: 400 3rem Arial, Helvetica, sans-serif;
+}
+
+#displayHeader {
+  background-color: rgba(24, 52, 61, 0.89);
+  border-radius: 0.313rem;
+  box-shadow: inset 0px 2px 4px 4px rgba(0, 0, 0, 0.426);
+  margin-bottom: 1rem;
+  padding: 6px 10px;
+  height: 9rem;
+  width: 448px;
+}
+
+.displayScreen {
+  color: #f1fcff;
+  text-align: right;
+  line-height: 9rem;
+  overflow: auto;
+}
+
+/*********BUTTONS*********/
+#buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5, 90px);
+  gap: 1rem;
+  grid-template-areas:
+    "btn1 btn2 btn3 btn4"
+    "btn5 btn6 btn7 btn8"
+    "btn9 btn10 btn11 btn12"
+    "btn13 btn14 btn15 btn16"
+    "btn17 btn18 btn19 btn19";
+  align-content: space-between;
+  justify-content: space-between;
+  border-radius: 0.313rem;
+}
+
+.btn {
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1fcff;
+  border-radius: 0.313rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2),
+    0 8px 8px -4px rgb(17, 17, 17, 0.2);
+  outline: 0 solid;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn1 { grid-area: btn1; }
+.btn2 { grid-area: btn2; }
+.btn3 { grid-area: btn3;}
+.btn4 { grid-area: btn4; }
+.btn5 { grid-area: btn5; }
+.btn6 { grid-area: btn6; }
+.btn7 { grid-area: btn7; }
+.btn8 { grid-area: btn8; }
+.btn9 { grid-area: btn9; }
+.btn10 { grid-area: btn10; }
+.btn11 { grid-area: btn11; }
+.btn12 { grid-area: btn12; }
+.btn13 { grid-area: btn13; }
+.btn14 { grid-area: btn14; }
+.btn15 { grid-area: btn15; }
+.btn16 { grid-area: btn16; }
+.btn17 { grid-area: btn17; }
+.btn18 { grid-area: btn18; }
+.btn19 { grid-area: btn19; }
+
+.clear, .backspace, .operator, .equals {
+  color: #f1fcff;
+}
+
+.clear, .backspace {
+  background-color: #ff6e61;
+  box-shadow: 0px 5px rgba(113, 45, 40, 0.80);
+}
+
+.operator {
+  background-color: #00647e;
+  box-shadow: 0px 5px rgba(0, 35, 44, 0.8);
+}
+
+.equals {
+  background-color: #01aaa7;
+  box-shadow: 0px 5px rgba(0, 62, 61, 0.8);
+  width: 218px;
+}
+
+.btn:hover {
+  filter: brightness(1.20);
+}
+
+.btn:active {
+  transform: translateY(3px);
+  box-shadow: 0px 1px #073340, 0 8px 8px -4px rgb(17, 17, 17, 0.2);
+}
+
+
+
+
+
+
+
